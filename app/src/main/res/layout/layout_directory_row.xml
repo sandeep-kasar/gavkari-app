@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimens_8"
+    android:paddingRight="@dimen/dimens_8"
+    android:paddingTop="@dimen/dimens_8"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:background="@drawable/ic_gaav_logo_final_circle_pl"
+        android:id="@+id/imgCard"
+        android:scaleType="fitXY"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:paddingRight="@dimen/dimens_8"
+        android:paddingLeft="@dimen/dimens_16"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_marginTop="@dimen/dimens_6"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/dark_jungle_green"
+            android:text="First Middle Lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="1dp"
+            android:id="@+id/tvType"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/dark_gray"
+            android:text="Kirana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStore"
+            android:layout_marginTop="@dimen/dimens_4"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/manatee"
+            android:text="Kirana and general store owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_phoneno"
+                android:id="@+id/tvMobile"
+                android:drawablePadding="@dimen/dimens_4"
+                android:gravity="fill_vertical"
+                android:layout_marginTop="@dimen/dimens_8"
+                android:textSize="@dimen/text_15"
+                android:textColor="@color/dark_jungle_green"
+                android:text="+91 9123456789"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgEdit"
+                android:paddingLeft="14dp"
+                android:paddingTop="16dp"
+                app:srcCompat="@drawable/ic_write"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_marginTop="@dimen/dimens_8"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/quantum_grey"/>
+
+    </LinearLayout>
+
+</LinearLayout>

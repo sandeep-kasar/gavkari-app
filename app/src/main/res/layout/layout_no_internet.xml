@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:id="@+id/layNoInternet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <TextView
+        android:textSize="@dimen/text_15"
+        android:gravity="center"
+        android:drawableTop="@drawable/ic_no_internet_connection"
+        android:text="@string/msg_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

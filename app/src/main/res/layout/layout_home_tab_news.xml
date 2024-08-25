@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimens_12"
+    android:paddingRight="@dimen/dimens_8"
+    android:paddingTop="@dimen/dimens_8">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dimens_4"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dimens_4"
+            android:background="@drawable/ic_gaav_logo_final_circle_pl_square" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimens_16"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:text="Agriculture"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="NABARD’s New ‘Water Atlas’ to Help Farmers Get the Water They Need, Lower Wastage to Help Farmers Get the Water They Need, Lower Wastage "
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_15" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:text=" Wednesday,\n April 17, 2018 "
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

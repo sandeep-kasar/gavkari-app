@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="350dp"
+    android:background="@drawable/border_square_white_hollow"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/isabelline"
+        android:gravity="center"
+        android:text="@string/lbl_check_equipment_ask"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/scrMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimens_8"
+        android:padding="@dimen/dimens_4"
+        android:scrollbars="none">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:padding="@dimen/dimens_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvAllEquip"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_all_equipments"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvCultivator"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_cultivator"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvRotovator"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_rotovator"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvPlough"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_plough"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvTrolley"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_trolley"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvSeedDrill"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_seed_drill"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvPump"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_water_motor_pump"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvSprayPump"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_spray_pump"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvIrrigation"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_irrigation_material"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvSteel"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_steel"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvOtherEqui"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_other_equipment"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

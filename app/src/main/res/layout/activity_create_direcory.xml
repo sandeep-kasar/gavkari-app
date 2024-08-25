@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/dimens_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatarDir"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:clickable="false"
+                    android:background="@drawable/ic_user_profile" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_30"
+                android:text="@string/business"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:id="@+id/edtBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:minHeight="40dp"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/title_name"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:id="@+id/edtDirTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/mobile"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edtMobileDir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLength="15"
+                android:minHeight="40dp"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/description"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+
+            <EditText
+                android:id="@+id/edtDirDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLines="3"
+                android:minHeight="150dp"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnDirSave"
+        android:layout_width="0dp"
+        android:layout_height="48.5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/lbl_save"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

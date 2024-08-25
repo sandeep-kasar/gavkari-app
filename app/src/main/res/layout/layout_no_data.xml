@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:id="@+id/layNoData"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+  <TextView
+      android:layout_marginBottom="50dp"
+      android:id="@+id/layNoDataText"
+      android:textSize="@dimen/text_15"
+      android:gravity="center"
+      android:drawableTop="@drawable/ic_no_data"
+      android:text="@string/msg_no_data"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</LinearLayout>

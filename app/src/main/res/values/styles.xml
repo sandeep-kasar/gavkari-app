@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:font">@font/proxima_nova_regular</item>
+        <!-- <item name="android:background">@color/white</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:font">@font/proxima_nova_regular</item>
+    </style>
+
+    <style name="AppTheme.Black" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/manatee</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/manatee</item>
+        <!-- <item name="android:background">@color/white</item>-->
+    </style>
+
+    <style name="Title.Login" parent="TextAppearance.AppCompat.Title">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Radio.Button" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:paddingLeft">@dimen/dimens_12</item>
+        <item name="android:layout_marginLeft">@dimen/dimens_12</item>
+
+    </style>
+
+    <style name="Divider.View" parent="Title.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/isabelline</item>
+    </style>
+
+    <style name="TextInputEditText" parent="AppTheme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColorHint">@color/manatee</item>
+        <item name="android:textSize">@dimen/text_14</item>
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="Base.TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_smoke</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="myTextStyle">
+        <item name="android:textColor">@color/dark_jungle_green</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="MyCustomPickerTheme" parent="MultiContactPicker.Azure">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+
+</resources>

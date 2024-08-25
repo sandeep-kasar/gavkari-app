@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/titleBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <TextView
+        style="@style/Title.Login"
+        android:text="@string/lbl_create_your_account"
+        app:layout_constraintBottom_toTopOf="@+id/titleBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/userBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/userBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline">
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_state"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_13" />
+
+        <Spinner
+            android:id="@+id/spnState"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            tools:listitem="@layout/layout_spinner">
+        </Spinner>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:paddingBottom="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_4"
+        android:layout_marginRight="8dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/manatee"
+        app:layout_constraintBottom_toTopOf="@+id/userBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        ></View>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/emailBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/emailBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline">
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_dist"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_13" />
+
+        <Spinner
+            android:id="@+id/spnDist"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            tools:listitem="@layout/layout_spinner">
+        </Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:paddingTop="@dimen/dimens_4"
+        android:paddingBottom="@dimen/dimens_4"
+        android:layout_marginRight="8dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/manatee"
+        app:layout_constraintBottom_toTopOf="@+id/emailBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        ></View>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mobileBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/mobileBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline">
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_taluka"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_13" />
+
+        <Spinner
+            android:id="@+id/spnTal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            tools:listitem="@layout/layout_spinner">
+        </Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:paddingBottom="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_4"
+        android:layout_marginRight="8dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/manatee"
+        app:layout_constraintBottom_toTopOf="@+id/mobileBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        ></View>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pwdBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+
+    <LinearLayout
+        android:id="@+id/laySelectVillage"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/pwdBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline">
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:layout_weight="1"
+            android:id="@+id/tvVillage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="fill_vertical"
+            android:orientation="horizontal"/>
+
+        <ImageView
+            android:padding="@dimen/dimens_12"
+            app:srcCompat="@drawable/ic_search_grey"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="fill_vertical"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <View
+        android:paddingTop="@dimen/dimens_4"
+        android:paddingBottom="@dimen/dimens_4"
+        android:layout_marginRight="8dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/manatee"
+        app:layout_constraintBottom_toTopOf="@+id/pwdBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        ></View>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/signUpBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_blue"
+        android:text="@string/lbl_sign_up"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signUpBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@id/startGuideline" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/notYetBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+
+    <LinearLayout
+        android:id="@+id/laySignIn_"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/notYetBottom"
+        app:layout_constraintEnd_toEndOf="@id/endGuideline"
+        app:layout_constraintStart_toStartOf="@id/startGuideline">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/lbl_already_registered"
+            android:textColor="@color/dark_jungle_green"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="@string/lbl_sign_in"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

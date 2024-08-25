@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.NearByFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rvHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+    <include
+        android:id="@+id/layNoData"
+        android:visibility="gone"
+        layout="@layout/layout_no_data"></include>
+
+    <include
+        android:id="@+id/layNoInternet"
+        android:visibility="gone"
+        layout="@layout/layout_no_internet"></include>
+
+    <ProgressBar
+        android:id="@+id/proNearBy"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</FrameLayout>

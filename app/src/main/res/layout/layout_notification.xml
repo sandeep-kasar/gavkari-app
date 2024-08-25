@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimens_12"
+    android:paddingRight="@dimen/dimens_12"
+    android:paddingTop="@dimen/dimens_10"
+    android:paddingBottom="@dimen/dimens_4">
+
+    <ImageView
+        android:background="@drawable/ic_gaav_logo_final_circle_pl"
+        android:id="@+id/imgCardNoti"
+        android:scaleType="centerCrop"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:paddingRight="@dimen/dimens_8"
+        android:paddingLeft="@dimen/dimens_12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingLeft="1dp"
+            android:id="@+id/tvTitleNoti"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/dark_jungle_green"
+            android:text="Offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/text_14"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/dark_gray"
+            android:text="Create event and get SMS free Create event and get SMS free Create event and get SMS free Create event and get SMS free "
+            android:minHeight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDateNoti"
+            android:layout_marginTop="@dimen/dimens_4"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/manatee"
+            android:text="12 may 2019"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

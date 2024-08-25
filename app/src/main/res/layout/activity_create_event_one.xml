@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/text_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_ad_title"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:textColor="@color/dark_jungle_green"
+                android:enabled="false"
+                android:id="@+id/edtAdTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:imeOptions="actionNext"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLength="100"
+                android:minHeight="@dimen/dimens_40"
+                android:textSize="@dimen/text_16" />
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/layLagnSubtitle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/dimens_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/groom_s_name"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtSubTitleOne"
+                            android:textColor="@color/dark_jungle_green"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/border_square_gray"
+                            android:gravity="top|left"
+                            android:maxLength="100"
+                            android:minHeight="@dimen/dimens_40"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/dimens_4"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/dimens_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/surname"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtSubTitleTwo"
+                            android:textColor="@color/dark_jungle_green"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/border_square_gray"
+                            android:gravity="top|left"
+                            android:maxLength="100"
+                            android:minHeight="@dimen/dimens_40"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/groom_s_father_and_mother_name"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtSubTitleThree"
+                    android:textColor="@color/dark_jungle_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:maxLength="100"
+                    android:minHeight="@dimen/dimens_40"
+                    android:textSize="@dimen/text_16" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/dimens_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bride_s_name"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtSubTitleFour"
+                            android:textColor="@color/dark_jungle_green"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/border_square_gray"
+                            android:gravity="top|left"
+                            android:maxLength="100"
+                            android:minHeight="@dimen/dimens_40"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/dimens_4"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/dimens_20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/surname"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtSubTitleFive"
+                            android:textColor="@color/dark_jungle_green"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:imeOptions="actionNext"
+                            android:background="@drawable/border_square_gray"
+                            android:gravity="top|left"
+                            android:maxLength="100"
+                            android:minHeight="@dimen/dimens_40"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bride_s_father_and_mother_name"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtSubTitleSix"
+                    android:textColor="@color/dark_jungle_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:maxLength="100"
+                    android:minHeight="@dimen/dimens_40"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/laySubtitle"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_subtitle"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:minHeight="72dp"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/laySubtitlePerson"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSubtitlePerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_person_name"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtSubTitlePerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:minHeight="@dimen/dimens_40"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_subtitle"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtSubTitleDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:imeOptions="actionNext"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:minHeight="72dp"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_family"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:id="@+id/edtFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLength="100"
+                android:minHeight="60dp"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_select_date"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:drawableRight="@drawable/ic_calendar"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_select_time"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:drawableRight="@drawable/ic_time"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_date_time"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:imeOptions="actionNext"
+                android:id="@+id/edtMuhurt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLength="100"
+                android:minHeight="72dp"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_address"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:imeOptions="actionDone"
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:maxLength="70"
+                android:minHeight="72dp"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnContinueOne"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/lbl_continue"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

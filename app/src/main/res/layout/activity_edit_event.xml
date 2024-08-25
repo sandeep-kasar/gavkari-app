@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/dimens_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_ad_title"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtAdTitleAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:imeOptions="actionNext"
+                    android:maxLength="100"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:id="@+id/layLagnSubtitle"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/dimens_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/groom_s_name"
+                                android:textColor="@color/dark_jungle_green"
+                                android:textSize="@dimen/text_16" />
+
+                            <EditText
+                                android:id="@+id/edtSubTitleOne"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/border_square_gray"
+                                android:gravity="top|left"
+                                android:maxLength="100"
+                                android:minHeight="@dimen/dimens_40"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/dimens_4"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/dimens_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/surname"
+                                android:textColor="@color/dark_jungle_green"
+                                android:textSize="@dimen/text_16" />
+
+                            <EditText
+                                android:id="@+id/edtSubTitleTwo"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/border_square_gray"
+                                android:gravity="top|left"
+                                android:maxLength="100"
+                                android:minHeight="@dimen/dimens_40"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dimens_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/groom_s_father_and_mother_name"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_16" />
+
+                    <EditText
+                        android:id="@+id/edtSubTitleThree"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/border_square_gray"
+                        android:gravity="top|left"
+                        android:maxLength="100"
+                        android:minHeight="@dimen/dimens_40"
+                        android:textSize="@dimen/text_14" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/dimens_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bride_s_name"
+                                android:textColor="@color/dark_jungle_green"
+                                android:textSize="@dimen/text_16" />
+
+                            <EditText
+                                android:id="@+id/edtSubTitleFour"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/border_square_gray"
+                                android:gravity="top|left"
+                                android:maxLength="100"
+                                android:minHeight="@dimen/dimens_40"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/dimens_4"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="@dimen/dimens_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/surname"
+                                android:textColor="@color/dark_jungle_green"
+                                android:textSize="@dimen/text_16" />
+
+                            <EditText
+                                android:id="@+id/edtSubTitleFive"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:imeOptions="actionNext"
+                                android:background="@drawable/border_square_gray"
+                                android:gravity="top|left"
+                                android:maxLength="100"
+                                android:minHeight="@dimen/dimens_40"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/dimens_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bride_s_father_and_mother_name"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_16" />
+
+                    <EditText
+                        android:id="@+id/edtSubTitleSix"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/border_square_gray"
+                        android:gravity="top|left"
+                        android:maxLength="100"
+                        android:minHeight="@dimen/dimens_40"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/laySubtitle"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimens_20"
+                        android:text="@string/lbl_subtitle"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_16" />
+
+                    <EditText
+                        android:id="@+id/edtSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/border_square_gray"
+                        android:gravity="top|left"
+                        android:minHeight="72dp"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/laySubtitlePerson"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvSubtitlePerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimens_20"
+                        android:text="@string/lbl_person_name"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_16" />
+
+                    <EditText
+                        android:id="@+id/edtSubTitlePerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/border_square_gray"
+                        android:gravity="top|left"
+                        android:minHeight="@dimen/dimens_40"
+                        android:textSize="@dimen/text_14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimens_20"
+                        android:text="@string/lbl_subtitle"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_16" />
+
+                    <EditText
+                        android:id="@+id/edtSubTitleDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:background="@drawable/border_square_gray"
+                        android:gravity="top|left"
+                        android:minHeight="72dp"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_family"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtFamilyAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:imeOptions="actionNext"
+                    android:maxLength="100"
+                    android:minHeight="60dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_select_date"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tvDateAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_14" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_select_time"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tvTimeAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:drawableRight="@drawable/ic_time"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_muhurt"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtMuhurtAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:hint="@string/lbl_muhurt_hint"
+                    android:imeOptions="actionNext"
+                    android:maxLength="100"
+                    android:minHeight="72dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_address"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtAddressAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:imeOptions="actionDone"
+                    android:maxLength="70"
+                    android:minHeight="72dp"
+                    android:textSize="@dimen/text_14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_map_location"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/edtMapLocationAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:drawableRight="@drawable/ic_map"
+                    android:gravity="top|left"
+                    android:minHeight="60dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/tvRelInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/relative_s_information"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtNimantrak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:minHeight="100dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_more_information"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtMoreInformationAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:hint="@string/hint_more_info"
+                    android:minHeight="160dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_upload_photos"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimens_4"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/dimens_4">
+
+                        <include
+                            android:id="@+id/img_event_1_ad"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+                        <include
+                            android:id="@+id/img_event_2_ad"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+                        <include
+                            android:id="@+id/img_event_3_ad"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_contact_number"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtContactNoAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:hint="@string/hint_contact_no"
+                    android:minHeight="48dp"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:text="@string/lbl_imp_note"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <EditText
+                    android:id="@+id/edtTipsAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:hint="@string/hint_tips"
+                    android:minHeight="60dp"
+                    android:textSize="@dimen/text_14" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnContinueOneAd"
+        android:layout_width="0dp"
+        android:layout_height="48.5dp"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:text="@string/lbl_save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

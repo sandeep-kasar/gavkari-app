@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/laySelectVillage"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimens_8"
+        android:background="@drawable/border_square_gray_hollow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40">
+        <TextView
+            android:textSize="@dimen/text_15"
+            android:id="@+id/tvSelectedVillage"
+            android:paddingLeft="@dimen/dimens_12"
+            android:gravity="fill_vertical"
+            android:text="@string/select_village"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:padding="@dimen/dimens_6"
+            app:srcCompat="@drawable/ic_filter_results_button"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvViewVillage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <include
+        android:id="@+id/layNoData"
+        android:visibility="gone"
+        layout="@layout/layout_no_data"></include>
+
+    <include
+        android:id="@+id/layNoInternet"
+        android:visibility="gone"
+        layout="@layout/layout_no_internet"></include>
+
+</LinearLayout>
