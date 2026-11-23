@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nvMyNews"
+        android:layout_marginTop="@dimen/dimens_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/layNoDataMyNews"
+        layout="@layout/layout_no_data"></include>
+
+    <include
+        android:id="@+id/layNoInternetMyNews"
+        layout="@layout/layout_no_internet"
+        android:visibility="gone"></include>
+
+</LinearLayout>

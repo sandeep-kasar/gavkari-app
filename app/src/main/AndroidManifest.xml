@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gavkariapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_gaav_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_gaav_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.ProfileActivity"></activity>
+        <activity android:name=".activity.OtherVillagesEventActivity" />
+        <activity android:name=".activity.NotificationDetailActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.EditSaleAdActivity" />
+        <activity android:name=".activity.MySaleAdActivity" />
+        <activity android:name=".activity.SelectBuySaleAdTypeActivity" />
+        <activity android:name=".activity.CreateSellAdActivity" />
+        <activity android:name=".activity.BuySaleDetailActivity" />
+        <activity android:name=".activity.EquipmentActivity" />
+        <activity android:name=".activity.MachinaryActivity" />
+        <activity android:name=".activity.AnimalActivity" />
+        <activity android:name=".activity.MyFavAdActivity" />
+        <activity android:name=".activity.EditNewsActivity" />
+        <activity android:name=".activity.MyNewsActivity" />
+        <activity android:name=".activity.SelectNewsTypeActivity" />
+        <activity android:name=".activity.MultipleDesignActivity" />
+        <activity android:name=".activity.OtherVillageNewsActivity" />
+        <activity android:name=".activity.SearchNewsActivity" />
+        <activity android:name=".activity.NewsFilterActivity" />
+        <activity android:name=".activity.FilterMyVillageActivity" />
+        <activity
+            android:name=".activity.SingleDesignActivity"
+            android:theme="@style/AppTheme.Black" />
+        <activity android:name=".activity.CreateDirectoryActivity" />
+        <activity android:name=".activity.AddBusinessActivity" />
+        <activity android:name=".activity.CreateNewsActivity" />
+        <activity android:name=".activity.SelectEventTypeActivity" />
+        <activity android:name=".activity.SelectVillageByTalActivity" />
+        <activity android:name=".activity.TermsConditionActivity" />
+        <activity android:name=".activity.LegalActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HomeActivity">
+            <intent-filter>
+                <action android:name="HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.SignInActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.LocationActivity" />
+        <activity android:name=".activity.EventDetailActivity" /> <!-- place_picker_api -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/place_picker_api" /> <!-- provider for api level 23 above -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.LocationService" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".activity.MediaActivity" />
+        <activity android:name=".activity.CreateEventOneActivity" />
+        <activity android:name=".activity.CreateEventTwoActivity" />
+        <activity android:name=".activity.CreateEventThreeActivity" />
+        <activity
+            android:name=".activity.SearchVillageActivity"
+            android:theme="@style/AppTheme.Black" />
+        <activity android:name=".activity.NewsDetailActivity" />
+        <activity android:name=".activity.DirectoryActivity" />
+        <activity android:name=".activity.MyEventActivity" />
+        <activity android:name=".activity.MyNotificationActivity" />
+        <activity android:name=".activity.SuccessActivity" />
+        <activity android:name=".activity.EditEventActivity" />
+        <activity android:name=".activity.Settings" />
+        <activity android:name=".activity.MyAccountActivity" />
+        <activity android:name=".activity.ProfileEditActivity" />
+        <activity android:name=".activity.HelpActivity" />
+    </application>
+
+</manifest>

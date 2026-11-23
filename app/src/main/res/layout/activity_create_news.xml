@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/dimens_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_news_title"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/edtNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:minHeight="60dp"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_select_date"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tvNewsDate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:drawableRight="@drawable/ic_calendar"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_select_time"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tvNewsTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:drawableRight="@drawable/ic_time"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dimens_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_news_source"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/edtNewsSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:minHeight="60dp"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_news_description"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/edtNewsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_square_gray"
+                android:gravity="top|left"
+                android:minHeight="200dp"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_20"
+                android:text="@string/lbl_upload_photos"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+
+            <HorizontalScrollView
+                android:layout_marginTop="@dimen/dimens_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/dimens_4">
+
+                    <include
+                        android:id="@+id/img_event_1"
+                        layout="@layout/layout_event_create_image">
+
+                    </include>
+
+                    <include
+                        android:id="@+id/img_event_2"
+                        layout="@layout/layout_event_create_image">
+
+                    </include>
+
+                    <include
+                        android:id="@+id/img_event_3"
+                        layout="@layout/layout_event_create_image">
+
+                    </include>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNewsContinueTwo"
+        android:layout_width="0dp"
+        android:layout_height="48.5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/lbl_save"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

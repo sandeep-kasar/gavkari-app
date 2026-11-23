@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="110dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="@dimen/dimens_8"
+    android:layout_marginBottom="@dimen/dimens_8"
+    android:layout_marginRight="@dimen/dimens_8"
+    android:layout_marginLeft="@dimen/dimens_4"
+    app:cardCornerRadius="@dimen/dimens_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_event"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/extra_dark_gray"
+            android:gravity="center"
+            android:text="@string/lbl_add_n_photo"
+            android:textSize="@dimen/text_16"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:padding="@dimen/dimens_4"
+            android:visibility="gone">
+
+            <ImageView
+                android:padding="@dimen/dimens_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_cross_out_mark" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

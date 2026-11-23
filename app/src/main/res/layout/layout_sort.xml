@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:paddingBottom="@dimen/dimens_6"
+        android:paddingTop="@dimen/dimens_20"
+        android:paddingLeft="@dimen/dimens_20"
+        android:paddingRight="@dimen/dimens_20"
+        android:minWidth="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdBtnOne"
+            android:textSize="@dimen/text_16"
+            android:paddingLeft="@dimen/dimens_16"
+            android:text="@string/lbl_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RadioButton
+            android:id="@+id/rdBtnTwo"
+            android:textSize="@dimen/text_16"
+            android:paddingLeft="@dimen/dimens_16"
+            android:text="@string/lbl_distance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RadioButton
+            android:id="@+id/rdBtnThree"
+            android:textSize="@dimen/text_16"
+            android:paddingLeft="@dimen/dimens_16"
+            android:text="@string/lbl_price_low_to_high"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RadioButton
+            android:id="@+id/rdBtnFour"
+            android:textSize="@dimen/text_16"
+            android:paddingLeft="@dimen/dimens_16"
+            android:text="@string/lbl_price_high_to_low"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:textSize="@dimen/dimens_16"
+            android:gravity="center"
+            android:text="@string/lbl_cancel"
+            android:background="@color/isabelline"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvApply"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimens_16"
+            android:text="@string/lbl_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NearByFragment">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dimens_4"
+        android:paddingTop="@dimen/dimens_6"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dimens_4">
+
+        <LinearLayout
+            android:id="@+id/layAnimal"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_cow_silhouette"
+                />
+
+            <TextView
+                android:textColor="@color/dark_gray"
+                android:text="@string/lbl_animals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layMachinary"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_tractor"
+                />
+
+            <TextView
+                android:textColor="@color/dark_gray"
+                android:text="@string/lbl_machinary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layEquipment"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="@dimen/dimens_6"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_wheelbarrow"/>
+
+            <TextView
+                android:gravity="bottom"
+                android:textColor="@color/dark_gray"
+                android:text="@string/lbl_equipments"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/dimens_8"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragment.NearByFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nvBuy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layCreateAd"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/dimens_16"
+                    android:layout_marginLeft="@dimen/dimens_16"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_blue_with_radious"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_40">
+
+                    <TextView
+                        android:textSize="@dimen/text_15"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/lbl_do_you_want_to_sale_anything"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:background="#B5BECB"
+                        android:layout_width="1dp"
+                        android:layout_height="14dp" />
+
+                    <TextView
+                        android:textSize="@dimen/text_15"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/lbl_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/dimens_8"
+                    android:id="@+id/rvBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/layNoDataBuy"
+            android:visibility="gone"
+            layout="@layout/layout_no_data"></include>
+
+        <include
+            android:id="@+id/layNoInternetBuy"
+            android:visibility="gone"
+            layout="@layout/layout_no_internet"></include>
+
+        <ProgressBar
+            android:id="@+id/proBuy"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

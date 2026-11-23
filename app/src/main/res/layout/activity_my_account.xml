@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyAccountActivity">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:paddingBottom="@dimen/text_16"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgAccoutAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_user_drawer" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sandeep Kasar"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvUserMob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 7972916956"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tvUserVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shevage darana"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="@dimen/text_14"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawablePadding="@dimen/text_16"
+                        android:drawableLeft="@drawable/ic_user_profile"
+                        android:id="@+id/tvPrifileDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_20"
+                        android:text="@string/title_profile_details"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_14" />
+                    <View
+                        android:visibility="gone"
+                        android:alpha="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="?android:attr/listDivider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layCreateNews"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:drawablePadding="@dimen/text_16"
+                        android:drawableLeft="@drawable/ic_edit_news"
+                        android:id="@+id/tvCreateNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_20"
+                        android:text="@string/lbl_create_news"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_14" />
+
+                    <View
+                        android:alpha="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="?android:attr/listDivider" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layMyNews"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawablePadding="@dimen/text_16"
+                        android:drawableLeft="@drawable/ic_newspaper"
+                        android:id="@+id/tvMyNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_20"
+                        android:text="@string/lbl_my_news"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_14" />
+                    <View
+                        android:alpha="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="?android:attr/listDivider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layAddBusiness"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawablePadding="@dimen/text_16"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dimens_20"
+                        android:text="@string/lbl_add_business"
+                        android:textColor="@color/dark_jungle_green"
+                        android:textSize="@dimen/text_14" />
+                    <View
+                        android:alpha="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="?android:attr/listDivider" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:textColor="@color/toast_error"
+        android:text="@string/log_out"
+        android:layout_margin="8dp"
+        android:background="@drawable/border_red_square"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</RelativeLayout>

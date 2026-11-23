@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group>
+        <item
+            android:id="@+id/nav_my_ad"
+            android:icon="@drawable/ic_myad"
+            android:title="@string/lbl_my_event" />
+        <item
+            android:id="@+id/nav_my_sale_ad"
+            android:icon="@drawable/ic_myad"
+            android:title="@string/lbl_my_sale_ad" />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notification"
+            android:title="@string/lbl_notification" />
+
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_myaccount"
+            android:title="@string/lbl_my_account" />
+
+
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/lbl_help" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/lbl_share" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/lbl_settings" />
+
+
+
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/lbl_legal" />
+
+
+    </group>
+
+</menu>

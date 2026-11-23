@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_create_ad"
+        android:enabled="true"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/lbl_create_ad"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_favourite"
+        android:enabled="true"
+        android:icon="@drawable/ic_heart_tick"
+        android:title="favourite"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_animal"
+        android:enabled="true"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/lbl_check_animal"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_machinery"
+        android:enabled="true"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/lbl_check_machinery"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_equipment"
+        android:enabled="true"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/lbl_check_equipment"
+        android:visible="true"/>
+
+</menu>

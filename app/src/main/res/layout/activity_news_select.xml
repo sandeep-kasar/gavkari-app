@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include layout="@layout/layout_toolbar"></include>
+
+    <TextView
+        android:background="@color/isabelline"
+        android:gravity="center"
+        android:text="@string/lbl_select_news_type_to_create"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scrMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimens_8"
+        android:scrollbars="none">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dimens_16"
+            android:paddingLeft="@dimen/dimens_16"
+            android:paddingBottom="@dimen/dimens_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimens_20"
+                    android:textStyle="bold"
+                    android:id="@+id/tvGramPanchayat"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/gram_panchayat"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvHealthService"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/health_service"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvSchool"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/lbl_school"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvSadNews"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/lbl_sad_news"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvSarpanch"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/lbl_sarpanch"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvPolicePatil"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/lbl_police_patil"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvOtherNews"
+                    android:layout_marginTop="@dimen/text_16"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="@dimen/dimens_10"
+                    android:text="@string/lbl_other_news"
+                    android:background="@drawable/border_square_blue_thin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimens_12"
+    android:paddingRight="@dimen/dimens_8"
+    android:paddingTop="@dimen/dimens_8">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dimens_4"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dimens_4"
+            android:background="@drawable/ic_gaav_logo_final_circle_pl_square" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimens_10">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:textColor="@color/dark_jungle_green"
+                    android:gravity="fill_vertical"
+                    android:textSize="17sp"
+                    android:text="Pickup_truck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:paddingBottom="2dp"
+                    android:id="@+id/tvBrand"
+                    android:paddingLeft="@dimen/dimens_4"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/text_13"
+                    android:text="(Mahindra Camper)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layDetails"
+                android:gravity="fill_vertical"
+                android:minHeight="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_12"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="fill_vertical"
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="2017, 40000 km"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/imgWhatsApp"
+                android:gravity="fill_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingTop="@dimen/dimens_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="\u20B9"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimens_4"
+                    android:gravity="top"
+                    android:text="50,000"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <TextView
+                android:paddingLeft="2dp"
+                android:id="@+id/tvDate"
+                android:textSize="@dimen/text_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill_vertical"
+                android:text="12 Nov, 2020"
+                android:textColor="@color/dark_gray" />
+
+            <LinearLayout
+                android:minHeight="@dimen/dimens_26"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_placeholder"
+                    android:drawablePadding="@dimen/dimens_6"
+                    android:gravity="fill_vertical"
+                    android:text="Shevage Darana,Nashik"
+                    android:textColor="@color/dark_gray" />
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/dimens_6"
+                    android:gravity="fill_vertical"
+                    android:textSize="@dimen/text_13"
+                    android:text="( 20 Km )"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimens_30"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="@dimen/dimens_6"
+                app:srcCompat="@drawable/ic_heart"
+                android:layout_alignParentTop="true"
+                android:id="@+id/imgLike"
+                android:layout_width="@dimen/dimens_30"
+                android:layout_height="@dimen/dimens_30" />
+
+            <ImageView
+                android:visibility="gone"
+                android:padding="@dimen/dimens_6"
+                app:srcCompat="@drawable/ic_heart_fill"
+                android:layout_alignParentTop="true"
+                android:id="@+id/imgLikeFill"
+                android:layout_width="@dimen/dimens_30"
+                android:layout_height="@dimen/dimens_30" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="@dimen/dimens_8"
+        android:id="@+id/tvSold"
+        android:visibility="gone"
+        android:alpha="0.6"
+        android:background="@drawable/border_red_square"
+        android:textColor="@color/sinopia"
+        android:textSize="@dimen/dimens_40"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/lbl_sold"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+    </TextView>
+
+</RelativeLayout>

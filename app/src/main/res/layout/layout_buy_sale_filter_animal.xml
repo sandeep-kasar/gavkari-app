@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="350dp"
+    android:background="@drawable/border_square_white_hollow"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/isabelline"
+        android:gravity="center"
+        android:text="@string/lbl_select_animal_to_check_ads"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/scrMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimens_8"
+        android:padding="@dimen/dimens_4"
+        android:scrollbars="none">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:padding="@dimen/dimens_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvAllAnimal"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_all_animals"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvCow"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_cow"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvBuffalo"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_buffalo"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvHeiferCow"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_heifer_cow"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvHeiferBuffalo"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_heifer_buffalo"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvOx"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_ox"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvMaleBuffalo"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_male_buffalo"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvGoat"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_goat"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tvMaleGoat"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_male_goat"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDomesticAnimal"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/text_16"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/dimens_12"
+                android:text="@string/lbl_other_domestic_animals"
+                android:background="@drawable/border_square_blue_thin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        layout="@layout/layout_toolbar"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"></androidx.recyclerview.widget.RecyclerView>
+
+    <include
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/layNoData"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/layout_no_data"></include>
+
+    <include
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/layNoInternet"
+        layout="@layout/layout_no_internet"></include>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

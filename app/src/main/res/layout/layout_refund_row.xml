@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/dimens_12">
+
+    <LinearLayout
+            android:paddingRight="@dimen/dimens_4"
+            android:paddingLeft="@dimen/dimens_4"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="1dp"
+                android:id="@+id/tvRfEventSub"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/dark_gray"
+                android:text="kasar chanvan marriage ceremoney going to happen this november"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimens_4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimens_30">
+                <TextView
+                    android:gravity="center"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/dark_gray"
+                    android:text="@string/lbl_refund_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="@dimen/dimens_4"
+                    android:gravity="center|left"
+                    android:id="@+id/tvRfAmount"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/dark_jungle_green"
+                    android:text="1000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/lbl_tran_id"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_14" />
+            <TextView
+                android:paddingLeft="@dimen/dimens_4"
+                android:id="@+id/tvRfTranId"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/dark_jungle_green"
+                android:text="TRA4555A522L"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tvRfDate"
+                android:drawablePadding="@dimen/dimens_4"
+                android:gravity="fill_vertical"
+                android:layout_marginTop="@dimen/dimens_4"
+                android:textSize="@dimen/text_14"
+                android:textColor="@color/dark_gray"
+                android:text="16 june 2019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

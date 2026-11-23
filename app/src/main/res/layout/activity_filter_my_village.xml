@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gavkariapp.activity.FilterMyVillageActivity">
+
+    <include
+        android:layout_alignParentTop="true"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        layout="@layout/layout_toolbar"></include>
+
+    <LinearLayout
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/browser_actions_bg_grey"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@color/quantum_white_hint_text"
+                android:paddingBottom="@dimen/dimens_6"
+                android:paddingLeft="10dp"
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:text="@string/lbl_event"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_15"></TextView>
+
+            <ScrollView
+                android:layout_margin="@dimen/dimens_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/lbl_all"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickAll"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick_green" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/lbl_public"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickOther"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#C2E0E0E0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layWedding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/wedding_ceremony"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickWedding"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layEngage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/engagement"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickEngage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layHouseWarm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/house_warming"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickHousewarm"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layJagaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/jagaran_gondhal"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickJagaran"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#C2E0E0E0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layDashkriya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/dashkriya_vidhi"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickDashkriya"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layFirstMaemory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/first_memorial"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickFrstMem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layRetirements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/retirement_ceremony"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickRetirement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#e0e0e0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layBirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/birthday"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickBirthday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#C2E0E0E0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/laySataynaraya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/satyanarayan_pooja"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickSatyanarayan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#C2E0E0E0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layMahaP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_14"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="fill_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="@string/maha_prasad"
+                                android:textSize="@dimen/text_13" />
+
+                            <LinearLayout
+                                android:padding="@dimen/dimens_16"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTickMahaP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_done_tick" />
+                            </LinearLayout>                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="@dimen/dimens_8"
+                            android:background="#C2E0E0E0" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingBottom="@dimen/dimens_6"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/quantum_white_100"
+                android:gravity="bottom"
+                android:text="@string/select_date"
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_15"></TextView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layAllPeriod"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:textSize="@dimen/text_13"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:gravity="fill_vertical"
+                        android:text="@string/lbl_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:padding="@dimen/dimens_16"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/imgAllPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_done_tick_green" />
+                    </LinearLayout>                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:background="#e0e0e0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay8days"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:textSize="@dimen/text_13"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:gravity="fill_vertical"
+                        android:text="@string/next_7_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:padding="@dimen/dimens_16"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img8days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_done_tick" />
+                    </LinearLayout>                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:background="#e0e0e0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay15days"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:textSize="@dimen/text_13"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:gravity="fill_vertical"
+                        android:text="@string/next_15_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:padding="@dimen/dimens_16"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img15days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_done_tick" />
+                    </LinearLayout>                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:background="#e0e0e0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay30days"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:textSize="@dimen/text_13"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:gravity="fill_vertical"
+                        android:text="@string/next_30_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:padding="@dimen/dimens_16"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/img30days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_done_tick" />
+                    </LinearLayout>                </LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/dimens_8"
+                    android:background="#C2E0E0E0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnApply"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/lbl_apply"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_show_filter"
+        android:enabled="true"
+        android:icon="@drawable/ic_filter_funnel"
+        android:title="Filter"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/hint_search"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_show_more"
+        android:enabled="true"
+        android:icon="@drawable/ic_next_thik"
+        android:title="@string/lbl_more_village"
+        android:visible="true"/>
+
+
+    <item
+        android:id="@+id/action_show_directory"
+        android:enabled="true"
+        android:icon="@drawable/ic_directory"
+        android:title="@string/title_directory"
+        android:visible="true"/>
+    <item
+        android:id="@+id/action_show_create"
+        android:enabled="true"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/lbl_create_event"
+        android:visible="true" />
+
+
+
+</menu>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.gavkariapp.activity.FilterMyVillageActivity">
+
+    <LinearLayout
+        android:minWidth="350dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingRight="@dimen/dimens_26"
+            android:paddingLeft="@dimen/dimens_30"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimens_40"
+            android:background="@color/isabelline"
+            android:gravity="fill_vertical"
+            android:text="Price"
+            android:textColor="@color/dark_jungle_green"
+            android:textSize="@dimen/text_15"></TextView>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="Below than 5000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 5001 to \u20B9 15000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>                </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 15001 to \u20B9 30000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:padding="@dimen/dimens_16">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>                </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 30001 to \u20B9 50000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>                </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 50001 to \u20B9 70000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 70001 to \u20B9 100000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 100001 to \u20B9 150000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 150001 to \u20B9 200000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:id="@+id/lay9"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="@dimen/text_14"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dimens_30"
+                android:gravity="fill_vertical"
+                android:text="\u20B9 200001  or  above"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:padding="@dimen/dimens_16"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="2dp"
+                    android:id="@+id/img9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_done_tick" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:textSize="@dimen/dimens_16"
+            android:gravity="center"
+            android:text="@string/lbl_cancel"
+            android:background="@color/isabelline"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvApply"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/dimens_16"
+            android:text="@string/lbl_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

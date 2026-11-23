@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateEventOneActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/dimens_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_selling_entiry"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/edtSellingEntity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:imeOptions="actionNext"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_selling_price"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:imeOptions="actionNext"
+                    android:maxLength="8"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:text="@string/lbl_upload_photos"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <HorizontalScrollView
+                    android:layout_marginTop="@dimen/dimens_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/dimens_4">
+
+                        <include
+                            android:id="@+id/img_event_1"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+                        <include
+                            android:id="@+id/img_event_2"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+                        <include
+                            android:id="@+id/img_event_3"
+                            layout="@layout/layout_event_create_image">
+
+                        </include>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layAnimal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layBreed"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_breed"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray_no_padding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spnBreed"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+                            </Spinner>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPregCount"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_pregnancies_count"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray_no_padding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spnPregCount"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+                            </Spinner>
+                        </LinearLayout>
+
+                   </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPregStatus"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_preg_status_"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+                        
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray_no_padding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/spnPregStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+                            </Spinner>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layMilk"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_milk_per_day_in_liter"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtMilk"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layWeight"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_weight_in_kg"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layMachine"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_companny"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_buying_year"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtBuyYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layKmDriven"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/km_driven"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtKmDriven"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layModel"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_model"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtModel"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPower"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_power"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtPower"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layCapacity"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_capacity"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtCapacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layEquipment"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/layCompanyEq"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_companny"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtCompanyEq"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="20"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layBuyYearEq"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_buying_year"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtBuyYearEq"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layMaterial"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_material"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtMaterial"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layTynes"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_no_of_tynes"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtTynes"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layWeightEq"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_weight_in_kg"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtWeightEq"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="5"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layCapacityEq"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_capacity"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtCapacityEq"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/laySize"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_size"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPowerEq"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_power"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtPowerEq"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPhase"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimens_16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_phase"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/text_14" />
+
+                        <EditText
+                            android:id="@+id/edtPhase"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border_square_gray"
+                            android:imeOptions="actionNext"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textColor="@color/dark_jungle_green"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_your_location"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/edtMapLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:drawableRight="@drawable/ic_map"
+                    android:gravity="top|left"
+                    android:minHeight="60dp"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:text="@string/lbl_short_title"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:minHeight="40dp"
+                    android:background="@drawable/border_square_gray"
+                    android:imeOptions="actionNext"
+                    android:maxLength="100"
+                    android:maxLines="2"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimens_16"
+                    android:text="@string/lbl_more_information"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+                <EditText
+                    android:id="@+id/edtMoreInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_square_gray"
+                    android:gravity="top|left"
+                    android:minHeight="100dp"
+                    android:maxLines="5"
+                    android:maxLength="200"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSale"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:text="@string/lbl_sale"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_15"/>
+
+</RelativeLayout>

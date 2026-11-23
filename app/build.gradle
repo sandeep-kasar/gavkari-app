@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+//apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.gavkariapp"
+        minSdkVersion 19
+        targetSdkVersion 31
+        versionCode 8
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    // Specifies one flavor dimension.
+    flavorDimensions "version"
+    productFlavors {
+        staging {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // This property is optional if you are using only one dimension.
+            dimension "version"
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            buildConfigField("String", "HOST", "\"http://gavkariapp.in/index.php/\"")
+            buildConfigField("String", "MEDIA", "\"http://gavkariapp.in/\"")
+        }
+        production {
+            dimension "version"
+            buildConfigField("String", "HOST", "\"http://gavkari.live/index.php/\"")
+            buildConfigField("String", "MEDIA", "\"http://gavkari.live/\"")
+        }
+        dependencies {
+            implementation fileTree(include: ['*.jar'], dir: 'libs')
+            implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+            testImplementation 'junit:junit:4.12'
+            androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+            androidTestImplementation 'androidx.test:runner:1.1.0'
+            androidTestImplementation 'androidx.test:rules:1.1.0'
+            androidTestImplementation 'androidx.annotation:annotation:1.0.0'
+            implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+            implementation 'com.google.code.gson:gson:2.8.2'
+            implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+            implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+            implementation 'com.google.android.gms:play-services-location:17.0.0'
+            implementation 'com.google.android.gms:play-services-maps:17.0.0'
+            implementation 'com.google.android.gms:play-services-places:17.0.0'
+            implementation 'com.google.android.play:core:1.6.1'
+            implementation 'com.google.android.libraries.places:places:1.1.0'
+            implementation 'com.google.firebase:firebase-core:17.0.0'
+            implementation 'com.google.firebase:firebase-messaging:19.0.1'
+            implementation 'com.karumi:dexter:4.2.0'
+            implementation 'com.irozon.sneaker:sneaker:1.0.2'
+            implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+            implementation 'androidx.lifecycle:lifecycle-viewmodel:2.0.0'
+            implementation 'androidx.lifecycle:lifecycle-livedata:2.0.0'
+            implementation 'androidx.multidex:multidex:2.0.0'
+            implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+            implementation 'androidx.appcompat:appcompat:1.0.0'
+            implementation 'com.google.android.material:material:1.0.0'
+            implementation 'androidx.recyclerview:recyclerview:1.0.0'
+            implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+            implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+            implementation 'com.github.bumptech.glide:glide:4.7.1'
+            implementation 'androidx.browser:browser:1.0.0'
+            implementation 'android.arch.work:work-runtime:1.0.1'
+            implementation 'androidx.multidex:multidex:2.0.0'
+            implementation 'androidx.browser:browser:1.0.0'
+            implementation 'com.vatsal.imagezoomer:image-zoomer:1.0.2'
+            implementation 'com.github.smarteist:autoimageslider:1.3.2'
+            implementation 'de.hdodenhof:circleimageview:3.0.1'
+            implementation 'com.android.support:multidex:1.0.3'
+            implementation 'com.prof.rssparser:rssparser:2.0.4'
+            //implementation 'com.github.broakenmedia:MultiContactPicker:1.8.5'
+            implementation 'com.google.firebase:firebase-crashlytics:17.3.0'
+            implementation 'com.google.firebase:firebase-analytics:18.0.0'
+
+            //implementation 'com.github.Yalantis:SearchFilter:v1.0.4'
+
+            //implementation 'com.razorpay:checkout:1.5.5'
+            //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:+'
+    implementation 'androidx.constraintlayout:constraintlayout:+'
+}

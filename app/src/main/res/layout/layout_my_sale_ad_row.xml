@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dimens_12"
+    android:paddingRight="@dimen/dimens_8"
+    android:paddingTop="@dimen/dimens_8">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dimens_4"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imgCard"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/dimens_4"
+            android:background="@drawable/ic_gaav_logo_final_circle_pl_square" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimens_10">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvType"
+                    android:textColor="@color/dark_jungle_green"
+                    android:gravity="fill_vertical"
+                    android:textSize="17sp"
+                    android:text="Pickup_truck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:paddingBottom="2dp"
+                    android:id="@+id/tvBrand"
+                    android:paddingLeft="@dimen/dimens_4"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/text_13"
+                    android:text="(Mahindra Camper)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layDetails"
+                android:gravity="fill_vertical"
+                android:minHeight="@dimen/dimens_20"
+                android:paddingRight="@dimen/dimens_12"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="fill_vertical"
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="2017, 40000 km"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/imgWhatsApp"
+                android:gravity="fill_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:paddingTop="@dimen/dimens_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="\u20B9"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimens_4"
+                    android:gravity="top"
+                    android:text="50,000"
+                    android:textColor="@color/dark_jungle_green"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimens_24"
+                android:drawableLeft="@drawable/ic_placeholder"
+                android:drawablePadding="@dimen/dimens_6"
+                android:gravity="fill_vertical"
+                android:text="Shevage Darana,Nashik"
+                android:textColor="@color/dark_gray" />
+
+            <LinearLayout
+                android:paddingLeft="2dp"
+                android:minHeight="@dimen/dimens_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="fill_vertical"
+                    android:text="@string/lbl_ad_status"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="@dimen/dimens_8"
+                    android:textColor="@color/kelly_green"
+                    android:textSize="@dimen/text_13"
+                    tools:text="Published" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="2dp"
+                android:minHeight="@dimen/dimens_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="fill_vertical"
+                    android:text="@string/lbl_ad_date"
+                    android:textSize="@dimen/text_13" />
+
+                <TextView
+                    android:paddingLeft="@dimen/dimens_8"
+                    android:id="@+id/tvDate"
+                    android:textSize="@dimen/text_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="fill_vertical"
+                    android:text="12 Nov, 2020"
+                    android:textColor="@color/dark_gray" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right|center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimens_40"
+        android:layout_marginBottom="@dimen/dimens_4"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/dimens_4"
+            android:layout_marginLeft="@dimen/dimens_12"
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnDelete"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_gray_with_radious"
+            android:text="@string/lbl_delete"
+            android:textAllCaps="true"
+            android:textColor="@color/manatee" />
+
+        <Button
+            android:layout_marginLeft="@dimen/dimens_12"
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnSold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/border_hollow_green_radious"
+            android:text="@string/lbl_has_sold"
+            android:textAllCaps="true"
+            android:textColor="@color/kelly_green"/>
+
+        <Button
+            android:layout_marginLeft="@dimen/dimens_12"
+            android:layout_marginTop="2dp"
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_blue_with_radious"
+            android:text="@string/lbl_edit"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</LinearLayout>
